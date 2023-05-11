@@ -1,0 +1,87 @@
+body {
+  background-color: lightblue;
+font-size:18px;
+}
+img {
+  border: 1px solid black; /* Sets a 1-pixel black solid border around the image */
+}
+ h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        a {
+            font-size: 20px;
+        }
+a:hover{
+background-color:#1976D2;
+color: #ffffff;
+}
+
+
+        body {
+            font-family: 'garamond,Times new Roman';
+            line-height:1.5;
+	    background-color:#FFFFFF;
+        }
+
+        img {
+            border: 1px solid black;
+        }
+
+        .table {
+            border-spacing: 30px;
+            padding: 10px;
+            border-width: 2px;
+background-color: #E3F2FD;
+        }
+
+        td {
+            spacing: 20px;
+        }
+
+        skills {
+            list-style-type: square;
+        }
+
+       
+
+        progress {
+            height: 20px;
+            border-radius: 40px;
+            background-color: #DDDDDD;
+        }
+
+        progress::-webkit-progress-value {
+            background-color: lightblue;
+        }
+
+        progress::-moz-progress-bar {
+            background-color: #CFD8DC;
+            border-radius: 10px;
+        }
+li{
+line height: 2;
+}
+.education{
+width:100%;
+}
+.h3{
+color: #9FA8DA;
+}
+.tr{
+width:100%;
+border-spacing:20px;
+background-color:#ECEFF1
+}
+strong{
+font-size:600;
+}
+article {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+background-color:#ECEFF1
+}
