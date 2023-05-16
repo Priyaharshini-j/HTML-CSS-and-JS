@@ -1,0 +1,159 @@
+<body>
+    <div class="card">
+    <div class="front">
+      <img src="images.jpg" alt="congrats">
+      <h2 class="happy">Congrats on Your Album Release</h2>
+      <div class="message">
+        <p>You have been an inspiration to everyone out there. Your labum is such a banger and all the sons are so good. </p>
+      </div>
+      <div class="balloons">
+        <div class="balloon1"></div>
+        <div class="balloon2"></div>
+        <div class="balloon3"></div>
+        <div class="balloon4"></div>
+        
+      </div>
+      
+    </div>
+    <div class="cardInside">
+      <h3 class="back">CONGRATS FOR GREAT SUCCESS</h3>
+      <p>I have been following for a very long time. I am very well know about the struggles you have faced throughout your career.</p>
+      <p style="">
+        <br>
+
+      </p>
+      <img class="album" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw_-X3-gihe8j6stvgppZiewLzYBKbO-1E5aUgoDQt5g&usqp=CAU&ec=48600112" alt="album">
+    </div>
+  </div>
+  </body>
+<style>
+    happy:hover{
+        transform: translate(20px, 20px);
+    }
+    body{
+        background-color: #030302;
+        display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+        
+    }
+    div{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .img{
+        margin-left: 35%;
+    }
+    .card {justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 400px;
+        height: 550px;
+        cursor: pointer;
+        transform-style: preserve-3d;
+        transform: perspective(2500px);
+        transition: 1s;
+        box-shadow: 10px 10px 10px grey;
+        background-color: rgb(255, 255, 255);
+        }
+
+        .cardInside {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background-color: #fff;
+        box-shadow: inset 100px 20px 100px rgba(57, 56, 56, 0.2);
+        padding: 30px;
+        }
+
+        .card:hover .cardInside {
+        display: block;
+        }
+
+        .front {
+        position: relative;
+        overflow: hidden;
+        transform-origin: left;
+        transition: 0.6s;
+        height: fit-content;
+        height: 550px;
+        }
+
+        .happy {
+        font-family: Georgia, serif;
+        color: #df2424;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        transition: transform 1s;
+        }
+
+        .happy:hover {
+        transform: translate(20px, 20px);
+        text-shadow: rgba(210, 51, 30, 0.76);
+        }
+
+        .balloons {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 150px;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        }
+
+
+        .message {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top:294px;
+        margin: 0 auto;
+        width: 80%;
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+        text-justify: auto;
+        font-family: 'Times New Roman';
+        margin-top: 35px;
+        }
+        .card:hover {
+  transform: perspective(2500px) rotateY(20deg);
+}
+
+.card:hover .front {
+  transform: perspective(2500px) rotateY(-20deg) rotateZ(-10deg);
+  visibility: hidden;
+}
+
+.cardInside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #fff;
+  box-shadow: inset 100px 20px 100px rgba(57, 56, 56, 0.2);
+  padding: 30px;
+  transform: perspective(2500px) rotateY(-180deg);
+  transition: transform 0,5s;
+}
+
+.card:hover .cardInside {
+  transform: perspective(2500px) rotateY(0deg);
+  display: block;
+}
+
+</style>  
