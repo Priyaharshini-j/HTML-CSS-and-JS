@@ -1,0 +1,116 @@
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  @media (min-width: 0px) and (max-width:800px) {
+    .flex-box {
+      flex-direction: column;
+      display: flex;
+    justify-content: space-between;
+    }
+  }
+  .title-screen {
+    flex-basis: 300px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    display: none;
+    -webkit-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+  }
+  
+  img:hover .card {
+    opacity: 1;
+    display: block;
+  }
+  
+  .title-screen img:hover{
+    -webkit-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -ms-filter: blur(1px);
+    -o-filter: blur(1px);
+    filter: blur(1px);
+    transform: scale(1.03);
+  }
+
+img::after {
+  content: '\002B'; /* This adds a plus sign to indicate the zoom-in action */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+img:hover::after {
+  opacity: 0.1; /* This shows the zoom-in icon on hover */
+}
+
+img{
+  
+  margin: 20px;
+}
+.card:hover{
+  -webkit-opacity: 1;
+  opacity: 1;
+}
+nav {
+    background-color: #333;
+    overflow: hidden;
+    font-size: 20px;
+  }
+  nav p{
+    width:57%;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    
+    font-size: 20px;
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background-color: #111;
+  }
+  .card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
