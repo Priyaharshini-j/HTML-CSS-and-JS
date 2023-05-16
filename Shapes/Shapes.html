@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>2D shapes</title>
+        <style>
+            div{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            p{
+                margin-top: 30px;
+                text-align: center;
+            }
+            .square{
+                width: 80px;
+                height: 80px;
+                background: rgb(194, 152, 233);
+                border:rgb(43, 3, 80);
+                transition: background  1.5s, box-shadow 1.5s, transform 1.5s;
+            }
+            .square:hover{
+                transform: translate(20px,20px);
+                background: pink ;
+                box-shadow: 5px 5px 5px rgba(234,23,54,0.6);
+            }
+            .circle{
+                width: 60px;
+                height: 60px;
+                margin-top: 30px;
+                margin-left: 30px;
+                border-radius: 50%;
+                background: rgb(228, 67, 115);
+		        transition: transform 1.5s;
+                color:white;
+            }
+            .circle:hover{
+                border:rgb(143, 235, 189) solid 3px;
+                transform: scale(2,2);
+                box-shadow: 5px 5px 5px rgba(234,23,54,0.6);
+            }
+            .parallel{
+                width: 150px;
+                height: fit-content;
+                transform: skew(20deg);
+                background: rgb(160, 222, 186);
+                transition: border-bottom 1.5s;
+                word-wrap: no-wrap;
+                text-overflow: ellipsis;
+                transition: border 1.5s;
+            }
+            .parallel:hover{
+                    transform: rotate(15deg);
+                    border-bottom: 16px solid rgb(143,196, 253);
+                    border-right: 5px solid rgb(143, 196, 253);
+                    text-shadow: 2px 4px gray;
+            }
+            .oval{
+                width: 120px;
+                height: 60px;
+                background: rgb(206, 245, 33);
+                border-radius: 100px / 50px;
+                transition: background 1.5s, height 1s, width 1.5s, border-radius 1.5s;
+            }
+            .oval:hover{
+                width: 60px;
+                height: 60px;
+                margin-top: 30px;
+                margin-left: 30px;
+                border-radius: 50%;
+                background: rgb(126, 193, 219);
+		        margin-bottom: 30px;                
+                box-shadow: 5px 5px 5px rgb(120, 133, 232) 0.5;
+            }
+            .rectangle{
+                margin-top: 70px;
+                width: 130px;
+		        margin: 15px;
+                height: fit-content;
+                background: rgb(140, 200, 241);
+                word-wrap: no-wrap;
+                text-overflow: ellipsis;
+                transition: border-radius 1.5px,transform 1.5s, background 1.5s;
+            }
+            .rectangle:hover{
+                background: rgb(189, 243, 123);
+                transform: skew(5deg, 5deg);
+		        border-radius: 28px;
+                box-shadow: 5px 5px 5px rgba(255, 73, 73,0.3);
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <p class="circle"><br>Circle</p>
+        <div class="oval"><br>
+            Oval
+        </div>
+        <p class="square">Square
+        </p>
+        <p class="parallel">ParallelParallel ParallelParallel ParallelParallel Parallel ParallelParallel ParallelParallel
+ Parallel ParallelParallelPa rallelParalle lParallelParallel</p>
+        <div class="rectangle"> RECTANGLE  RECTANGLE  RECTANGLE  RECTANGLE  RECTANGLE  RECTANGLE  RECTANGLE  RECTANGLE  RECTANGLE 
+        </div>
+        <div class="infinity"> 
+        </div>
+    </body>
+</html>
