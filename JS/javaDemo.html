@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Demo</title>
+    <script>
+        function add(){
+            let a = 100
+            let b = 21
+            let x = a + b;
+            document.getElementById("result").innerHTML = x;
+        }
+        function sub(){
+            let a = 100
+            let b = 21
+            let x = a - b;
+            document.getElementById("result").innerHTML = x;
+        }
+        function mul(){
+            let a = 100
+            let b = 21
+            let x = a * b;
+            document.getElementById("result").innerHTML = x;
+        }
+        function div(){
+            let a = 100
+            let b = 21
+            let x = a / b;
+            document.getElementById("result").innerHTML = x;
+        }
+        function mod(){
+            let a = 100
+            let b = 21
+            let x = a % b;
+            document.getElementById("result").innerHTML = x;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="add()">Addition</button>    
+    <button onclick="sub()">Subtraction</button>
+    <button onclick="mul()">Multiplication</button>
+    <button onclick="div()">Division</button>
+    <button onclick="mod()">Modular Divison</button>
+    <p id="result"></p>
+</body>
+</html>

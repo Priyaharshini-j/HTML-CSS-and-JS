@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Demo</title>
+    <script>
+        function add(){
+            var a = parseInt(document.getElementById("value1").value);
+            var b = parseInt(document.getElementById("value2").value);
+            document.getElementById("result").innerHTML = a + b;
+        }
+        
+        function sub(){
+            var a = parseInt(document.getElementById("value1").value);
+            var b = parseInt(document.getElementById("value2").value);
+            document.getElementById("result").innerHTML = a - b;
+        }
+        
+        function mul(){
+            var a = parseInt(document.getElementById("value1").value);
+            var b = parseInt(document.getElementById("value2").value);
+            document.getElementById("result").innerHTML = a * b;
+        }
+        
+        function div(){
+            var a = parseInt(document.getElementById("value1").value);
+            var b = parseInt(document.getElementById("value2").value);
+            document.getElementById("result").innerHTML = a / b;
+        }
+        
+        function mod(){
+            var a = parseInt(document.getElementById("value1").value);
+            var b = parseInt(document.getElementById("value2").value);
+            document.getElementById("result").innerHTML = a % b;
+        }
+    </script>
+</head>
+<body>
+    <label>Value of A</label>
+    <input type="text" id="value1">    <br><br>
+    <label>Value of B</label>
+    <input type="text" id="value2"><br><br>
+    <button onclick="add()">Addition</button>    
+    <button onclick="sub()">Subtraction</button>
+    <button onclick="mul()">Multiplication</button>
+    <button onclick="div()">Division</button>
+    <button onclick="mod()">Modular Division</button>
+    <p id="result"></p>
+</body>
+</html>
+

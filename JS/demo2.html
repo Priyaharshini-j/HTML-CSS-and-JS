@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Discount</title>
+    <script>
+        function discountCal(){
+            var day =document.getElementById("day").value;
+            var amount = document.getElementById("amt").value;
+            var discountPercentage=0;
+            switch (day) {
+                case "MONDAY":
+                discountPercentage = 0.15;
+                break;
+                case "TUESDAY":
+                discountPercentage = 0.1;
+                break;
+                case "WEDNESDAY":
+                discountPercentage = 0.12;
+                break;
+                case "THURSDAY":
+                discountPercentage = 0.11;
+                break;
+                case "FRIDAY":
+                discountPercentage = 0.13;
+                break;
+                case "SATURDAY":
+                discountPercentage = 0.14;
+                break;
+                case "SUNDAY":
+                discountPercentage = 0.15;
+                break;
+                default:
+                discountPercentage = 0; 
+                break;
+            }
+            var discount = amount * discountPercentage;
+            var totalAmt = amount - discount;
+            document.getElementById("res").innerHTML="The total amount to pay is "+  totalAmt + ".<br>You received a discount of "+ discount;
+        }
+    </script>
+    <style>
+        body{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 20px;
+            font-family: garamond;
+        }
+        .container{
+            width:fit-content;
+            background-color: rgb(211, 209, 209);
+            border-radius: 7px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        button{
+            width:fit-content;
+            padding: 10px;
+            background-color: rgb(9, 91, 205);
+            color: white;
+            border-radius: 7px;
+            border: none;
+            font-size: 16px;
+            font-family: garamond;
+        }
+        button:hover{
+            background-color: rgb(89, 184, 248);
+            color:black;
+            font-weight: 600;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="container">
+            <h3>Discount Calculation using Switch Statement</h3>
+    <label>
+        Enter the day
+    </label>
+    <select id="day">
+        <option value="MONDAY">Monday</option>
+        <option value="TUESDAY">Tuesday</option>
+        <option value="WEDNESDAY">Wednesday</option>
+        <option value="THURSDAY">Thursday</option>
+        <option value="FRIDAY">Friday</option>
+        <option value="SATURDAY">Saturday</option>
+        <option value="SUNDAY">Sunday</option>
+      </select>
+      <br>
+      <br>
+    <label>Enter the amount</label>
+    <input type="number" id="amt">
+    <br>
+    <br>
+    <button onclick="discountCal()">Discount Calculation</button>
+    <p id="res"></p>
+        </div>
+    </center>    
+</body>
+</html>
